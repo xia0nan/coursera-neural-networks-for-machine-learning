@@ -4,5 +4,5 @@ function visible_probability = hidden_state_to_visible_probabilities(rbm_w, hidd
 % The returned value is a matrix of size <number of visible units> by <number of configurations that we're handling in parallel>.
 % This takes in the (binary) states of the hidden units, and returns the activation probabilities of the visible units, conditional on those states.
     z = rbm_w' * hidden_state;
-    visible_probability = 1 ./ (1 + exp(-z))
+    visible_probability = 1 ./ (1 + exp(-z));
 end
