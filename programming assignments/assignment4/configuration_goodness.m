@@ -3,5 +3,7 @@ function G = configuration_goodness(rbm_w, visible_state, hidden_state)
 % <visible_state> is a binary matrix of size <number of visible units> by <number of configurations that we're handling in parallel>.
 % <hidden_state> is a binary matrix of size <number of hidden units> by <number of configurations that we're handling in parallel>.
 % This returns a scalar: the mean over cases of the goodness (negative energy) of the described configurations.
-    error('not yet implemented');
+    z = (hidden_state * visible_state') .* rbm_w;
+    n_c = size(hidden_state, 2);
+    G = sum(z(:)) / n_c;
 end
