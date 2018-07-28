@@ -26,9 +26,13 @@ function ret = cd1(rbm_w, visible_data)
     visible_state_2 = sample_bernoulli(visible_probability);
 
     hidden_probability_2 = visible_state_to_hidden_probabilities(rbm_w, visible_state_2);
-    hidden_state_2 = sample_bernoulli(hidden_probability_2);
+    % hidden_state_2 = sample_bernoulli(hidden_probability_2);
+    hidden_state_2 = hidden_probability_2;
+    % no longer do that sampling at the hidden state that results from the "reconstruction" visible state
 
     d_G_2 = configuration_goodness_gradient(visible_state_2, hidden_state_2);
+
+
 
     ret = d_G_1 - d_G_2;
 end
