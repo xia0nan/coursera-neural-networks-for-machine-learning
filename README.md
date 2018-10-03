@@ -1,4 +1,5 @@
-# coursera-neural-networks-for-machine-learning
+# Neural Networks for Machine Learning
+## By Geoffrey Hinton - University of Toronto
 Study of Coursera course - Neural Networks for Machine Learning by University of Toronto
 
 Course Link - https://www.coursera.org/learn/neural-networks
