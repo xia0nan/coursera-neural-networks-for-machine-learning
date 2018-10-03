@@ -4,7 +4,7 @@ Study of Coursera course - Neural Networks for Machine Learning by University of
 
 Course Link - https://www.coursera.org/learn/neural-networks
 
-By (Geoffrey Hinton)[http://www.cs.toronto.edu/~hinton/]
+By [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/)
 
 Youtube List - https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9
 
